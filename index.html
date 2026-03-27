@@ -6,7 +6,89 @@
     <title>Document</title>
     <link rel="stylesheet" href="./src/output.css">
 </head>
-<body>
-    
+<body class="bg-gray-50 font-sans">
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <header class="flex items-center justify-between py-6">
+            <div class="flex space-x-8 text-gray-600 font-medium ml-auto mr-12">
+                <a href="#" class="hover:text-green-600 transition">Booking</a>
+                <a href="#" class="hover:text-green-600 transition">Facilities</a>
+                <a href="#" class="hover:text-green-600 transition">About Us</a>
+                <a href="#" class="hover:text-green-600 transition">Location</a>
+                <a href="#" class="hover:text-green-600 transition">Contact</a>
+            </div>
+            <button class="bg-[#1DB968] text-white px-8 py-2 rounded-full hover:bg-green-700 transition">
+                Login
+            </button>
+        </header>
+
+        <main class="relative bg-white rounded-[3rem] overflow-hidden shadow-sm flex flex-col md:flex-row min-h-[500px]">
+            
+            <div class="w-full md:w-1/2 p-12 md:p-20 flex flex-col justify-center">
+                <h1 class="text-5xl md:text-6xl font-bold text-gray-900 leading-tight mb-6">
+                    Find your perfect place to stay
+                </h1>
+                <p class="text-gray-500 text-lg mb-8 max-w-md">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+                
+                <div class="flex items-center space-x-3 cursor-pointer group w-fit">
+                    <div class="bg-white border border-gray-200 p-3 rounded-md shadow-sm group-hover:bg-gray-50">
+                        <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M4.5 3.5v13L16 10 4.5 3.5z"/>
+                        </svg>
+                    </div>
+                    <span class="font-semibold text-gray-800">Watch video</span>
+                </div>
+            </div>
+
+            <div class="w-full md:w-1/2 relative h-[400px] md:h-auto">
+                <img src="./src/imdss/image.png" 
+                     alt="House" 
+                     class="absolute inset-0 w-full h-full object-cover">
+            </div>
+
+            <div class="absolute bottom-10 left-12 right-12 md:left-20 md:right-auto bg-white rounded-full shadow-xl p-2 flex flex-wrap md:flex-nowrap items-center border border-gray-100 max-w-4xl">
+                
+                <div class="flex flex-1 items-center px-6 py-2 border-r border-gray-100">
+                    <i class="fas fa-map-marker-alt text-green-500 mr-3"></i>
+                    <div>
+                        <p class="text-sm font-bold">Location</p>
+                        <p class="text-xs text-gray-400">United States</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-1 items-center px-6 py-2 border-r border-gray-100">
+                    <i class="far fa-calendar-alt text-green-500 mr-3"></i>
+                    <div>
+                        <p class="text-sm font-bold">Check in</p>
+                        <p class="text-xs text-gray-400">10 Jun 2021</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-1 items-center px-6 py-2 border-r border-gray-100">
+                    <i class="far fa-calendar-alt text-green-500 mr-3"></i>
+                    <div>
+                        <p class="text-sm font-bold">Check out</p>
+                        <p class="text-xs text-gray-400">15 Jun 2021</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-1 items-center px-6 py-2">
+                    <i class="fas fa-user text-green-500 mr-3"></i>
+                    <div>
+                        <p class="text-sm font-bold">Rooms for</p>
+                        <p class="text-xs text-gray-400">1 room, 2 guests</p>
+                    </div>
+                </div>
+
+                <button class="bg-[#1DB968] text-white px-10 py-4 rounded-full flex items-center space-x-2 hover:bg-green-700 transition ml-4">
+                    <i class="fas fa-search"></i>
+                    <span>Search...</span>
+                </button>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
